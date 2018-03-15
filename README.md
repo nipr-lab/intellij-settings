@@ -19,17 +19,26 @@ exported, try looking at the `settings.jar` (which contains human-readable confi
 
 ## How To: Import Settings
 ### One time setup
-1. Prerequisite: Check out `common-build`.
-    * Note: If checked out somewhere other than `C:/Data/workspace/eclipse/common-build`, change your IntelliJ settings 
-    for Checkstyle and Eclipse Code Formatter plugins to reflect this.
-2. Download and install IntelliJ IDEA Ultimate.
+1. Prerequisite: Check out `common-build`. If you already have it checked out, **make sure it is updated**.
+    * **Important**: If checked out somewhere other than `C:/Data/workspace/eclipse/common-build`, you will need to change your 
+    IntelliJ settings for Checkstyle and Eclipse Code Formatter plugins after finishing the rest of this guide.
+2. Download and install IntelliJ IDEA Ultimate
     * Link: https://www.jetbrains.com/idea/download/
-    * Note: You likely won't have privileges to install under `C:/Program Files` on your VM. Anywhere else such as your user's 
-    `AppData` directory works fine.
+    * If shown a Windows/RSA authentication popup, try entering your credentials. If it fails, click "No" and the installer 
+    should open anyways. If it still doesn't open, ask for help.  
+    * Install location: Doesn't matter; the default is fine.
+    * Install options: Make sure to select the checkbox to include JetBrain's bundled JRE. Also, it is recommend to select the
+    64-bit launcher desktop shortcut and create associations for all file types.
 3. Open IntelliJ
+    1. When shown a "Complete Installation" dialog asking where to import Intellij IDEA settings from, choose do not import 
+    settings (this is used to migrate from an old version if you had it installed previously).
+    2. You will be presented with a series of customization options. Feel free to pick a theme of your choice. On the next 
+    screen regarding customizing plugins, you can accept the defaults as-is.
+    3. Once finished, you will finally be shown a welcome splash screen with the logo and a handful of options (Create New 
+    Project, etc).
 4. Import NIPR settings
     1. Download `settings.jar` from this repo
-    2. Go to Configure -> Import Settings
+    2. On the welcome splash screen, go to Configure (at the bottom right) -> Import Settings
     3. Select the settings jar
     4. Make sure all categories are selected (the default) and confirm
 5. Restart IntelliJ to apply settings (the IDE should display a notification prompting you to do this)
